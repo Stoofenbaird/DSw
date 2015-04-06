@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--release date: April 6, 2015-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>David Stratton: Landscape Artist: About</title>
+<link rel="stylesheet" href="css/DSsec3.css" >
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<div id="DSwrap"> <!--Container for page content/flex layout  -->
+		<header>
+  			<h1>David Stratton: Landscapes</h1> 
+  			<h1>About</h1> 
+		</header>  
+        <div id="menu">  <!--primary navigation menu, disabled for small screens -->
+              	<ul>
+                  <li class="selected"><a href="DSabout.html">About</a></li>
+                  <li><a href="DSartist.html">Artist's Statement</a></li>
+                  <li><a href="DScollections.html">Collections</a></li>
+                  <li><a href="DSgallery.html">Non-Flash Gallery</a></li> <!--javascript gallery for devices that do not support Flash -->
+                  <li><a href="Portfolio/mediaGallery.html">Image Gallery</a></li> <!--link to master Stoofenbaird gallery/DS portfolio folder -->                 
+                  <li><a href="index.html">Stoofenbaird</a></li> <!--Link to Stoofenbaird home page  -->
+				</ul>   
+        </div> <!--menu div end-->        
+        <div id="altMenu">  <!-- Drop down menu for small screens; hidden on medium and large screens -->
+        	<input type="image" src="DSelm/MenuBox.svg" id="altMenu" onclick="menuBox()"/>  <!--This is a function set on the exhibit js file   -->
+        </div> <!--end altMenu div-->        
+        <div id="exhibit"> <!--Optional display of current exhibit info.  Called by functions on the exhibit js file  -->
+        <p>Click if you would like to visit David Stratton's current exhibit.</p>
+        <p><button id ="exhibits" onclick="displayExhibit()" class = "button" >Show/Hide Exhibit Info</button></p>
+        </div> <!-- end exhibit div -->
+    <div id="DScnt">  <!-- Main content division-->    
+        <section class="pageContent">  <!-- Primary content text and images -->
+            <article>           
+                <figure>
+                	<img src="DSsmImg/1529_t_sm.png"  />
+                <figcaption>MUNCHKINS ~2013</figcaption>
+                </figure>                
+                	<h2>Biographical details</h2>             
+                	<p>David Stratton is Professor of Art and Graphic Design teaching foundations, history, studio, theory, and design software at Brescia University since 1996. He is sole proprietor of a freelance design consultancy since 1992. His research awards include the Al Smith Fellowship of Kentucky 2007; selected for Owensboro representation as USA artist in Czech Republic-Olomouc-Sister Cities Exhibit 201;  Logo category winner in Graphic Design USA Magazine national competition 2011; published in the 2003 Community of Inquiry Journal on Art, Service, and Ethics (co-written), and has had 28 solo exhibits with his artwork.  </p>
+                  	<p>He earned his BFA in graphic design from the University of Tennessee, Knoxville, and  MS in drawing and MFA in painting from Illinois State University, Bloomington-Normal, IL.</p>
+                  	<p>He and his wife have a variety of interests, including enduring the joys of fostering, adopting, and raising of Airedale terriers, greyhounds, and bearded collies.</p>
+            </article>
+        </section>    
+    </div> <!--DScnt div end-->  
+    <div class="push"></div> <!-- class push keeps footer at the bottom of the page-->
+	</div> <!--DSwrap div end-->
+    <div class = "footer"> <!-- holds copywrite information -->
+    <p><span> &copy </span> 2015 David Stratton. Site managed by Stoofenbaird.</p>
+    </div>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/exhibit.js"></script> <!-- this file contains functions for exhibit information and drop down menu -->
+</body>
+</html>
