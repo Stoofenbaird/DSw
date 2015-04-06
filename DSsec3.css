@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/* CSS Document  April 6, 2015 */
+
+/*------------------------------------------------------General styles for all screen sizes---*/
+
+html, body {
+	font-family: 'Playfair Display SC', serif;
+	background-color: #ab9b8a;
+	height: 100%;
+	margin: 0;	
+}
+
+/*---------------------------------wrapper or container--*/
+#DSwrap {		
+	font-family: 'Playfair Display SC', serif;
+	font-size: 1em;
+	color: #474719;
+	background: #fff;
+	min-height: 100%;
+	height: auto;  /*--supports IE6 ---*/
+}
+
+/*--------------------------Choose a DS image to be shown behind header lettering  ----*/
+header {
+	background-image:url(../DSelm/DScover5.png);	
+}
+
+h1 {
+	color: #474719;		
+}
+/*--------------------Styles for optional current exhibition information.  This html is called with a button click.  ---------------*/
+#exhibit {
+	width: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	line-height: .8em;
+	margin-left: 10px;
+	margin-top: 5px;	
+}
+
+#exhibit p {
+	font-size: .7em;
+	margin: 10px 0;
+		
+}
+
+#exhibit h2 {
+	font-size: 1em;
+	margin-left: 10px;	
+}
+
+#exhibit h3 {
+	font-size: 1em;
+	margin-left: 10px;	
+}
+
+#exhibit a {
+	text-decoration: underline;	
+}
+
+/*---------------------------Primary content styles  -------------------*/
+#DScnt {
+	font-family: Verdana, Geneva, sans-serif;
+	width: 100%;
+	height: auto;	
+}
+/*---------------------------Subsection of Primary content --------------*/
+.pageContent {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: .9em;
+	line-height: 1.4em;
+	clear: both;
+	overflow: auto;
+	width: 90%;		
+}
+
+/*---------------------------page Image styles--------------*/
+.pageContent article figure {
+	float: left;
+	width: auto;
+	height: auto;
+	padding: 5px 20px 5px 15px;	
+}
+
+/*---------------------------page Image caption styles --------------*/
+.pageContent article figcaption {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 80%;
+	text-align: left;
+	margin: auto;
+}
+
+/*---------------------------Subsection article content styles--------------*/
+.pageContent article h2 {
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: left: 5%;
+}
+
+.pageContent article h3 {
+	font-size: .95em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: left: 5%;
+}
+
+.pageContent article h4 {
+	font-size: .9em;
+	font-weight: bold;
+	margin-top: 10px;
+	padding-left: 5%;
+}
+
+.pageContent article p {
+	margin-left: 2%;
+	margin-right: 5%;
+}
+
+.pageContent article ul {
+	line-height: 1.6em;	
+}
+
+/*---------------------------styles for button and link on Collections pages--------------*/
+.pageContent p.signup {
+	color: #443c37;
+}
+
+.pageContent p.signup a {
+	background: #cc9;
+}
+
+/*---------------------------Contact Form styles -------------*/
+form {
+	font-family: 'Playfair Dispaly SC', serif;
+	font-size: .85em;	
+}
+
+form ul {
+	list-style-type: none;	
+}
+
+form li #name, #address, #city, #state, #zip, #comments {
+	font-size: 1em;
+	color: #666;
+	margin: 5px;	
+}
+
+input[type="text"] {
+	font-size: 18px;	
+}
+
+form p #review {
+	font-size: 1.5em;
+	color:; #633;
+	margin: 5px;	
+}
+
+input#submit {
+	background-color: #cc9;
+	color: #000;	
+}
+
+/*---------------------------styles for Push div class (a space keeper)--------------*/
+.push {
+	height: 40px;
+	width: 100%;
+}
+
+/*---------------------------footer styles--------------*/
+.footer  {
+	height: 40px;
+	width: 100%;
+	color: #333;
+}
+
+.footer p {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: .8em;
+	text-align: center;
+}
+
+
+/* ----------------------------------------------------------------Phones and small screens----*/ 
+@media only screen and (min-width : 320px) {
+/*---------------------changes to wrapper or container styles--*/	
+	#DSwrap {
+		width: 450px;
+		height: auto;
+		margin: 0 auto;
+	}
+/*---------------------changes to header styles--*/	
+	header {
+		height: 90px;
+		background-size: 70% no-repeat;	
+	}
+	
+	h1 {
+		font-size: 1.25em;
+		margin: 10px 5% 0 5%;
+		padding: 5px 5% 3px 5%;	
+	}
+/*---------------------hide default menu on small screens--*/	
+	#menu {
+		visibility: hidden;	
+	}
+	
+	#menu ul {
+		height: 5px;
+		visibility: hidden;	
+	}
+	
+	#menu ul li {
+		visibility: hidden;	
+	}
+	
+	#menu ul li a {
+		visibility: hidden;		
+	}
+		
+	#menuBox {
+		visibility: visible;	
+	}
+	
+/*---------------------show alternate drop down menu on small screens--*/	
+	#altMenu li {
+		width: 40%;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 1em;
+		color: #c30;
+		list-style-type: none;
+		background-color: #333;
+		line-height: 1.3em;
+		border-bottom: 3px solid #fff;
+		padding-bottom: 3px;
+		padding-left: 5px;
+		visibility: visible;	
+	}
+	
+	#altMenu li a:link {
+		color: #fff;
+		text-decoration: none;	
+	}
+	
+	#altMenu li a:visited {
+		color: #6ff;
+		text-decoration: none;	
+	}
+
+/*---------------------changes to primary content styles--*/	
+	#DScnt {
+		margin: 5px;	
+	}
+	
+/*---------------------changes to push styles--*/
+	.push {
+	height: 60px;
+	width: 100%;
+	}
+}
+
+
+
+/* --------------------------------------------------------------------Tablets----*/ 
+@media only screen and (min-width : 768px) {
+/*---------------------changes to wrapper or container styles--*/	
+	#DSwrap {
+		width: 600px;
+		margin: 0 auto;
+	}
+	
+	header {
+		height: 100px;		
+	}
+	
+	h1 {
+		font-size: 1.5em;
+		margin: 5px 10% 5px 5%;
+		padding: 5px 10% 3px 5%;	
+	}
+/*---------------------show defualt menu on tablets--*/	
+	#menu {
+		clear: both;
+		color: #633;
+		background-color: #a3ffff;		
+		visibility: visible;	
+	}
+	
+	#menu ul {
+		display: inline;
+		width: 600px;
+		height: 40px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;	
+		visibility: visible;
+	}
+	
+	#menu li {
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: .85em;
+		font-weight: bold;
+		font-decoration: none;
+		display: inline;
+		margin-left: 7px;
+		visibility: visible;	
+	}
+	
+	#menu a {
+		padding: 5px;
+		visibility: visible;
+	}
+	
+	#menu a:link {
+		color: #522900;
+		text-decoration: none;
+		visibility: visible;
+	}
+	
+	#menu a:visited {
+		color: #5a504b;
+		text-decoration: none;
+		visibility: visible;	
+	}
+	
+	#menu a:hover {
+		color: #003366;
+		text-decoration: none;
+		visibility: visible;
+	}
+	
+	#menu a:active {
+		color: #332d29;
+		text-decoration: none;
+		visibility: visible;	
+	}
+/*---------------------hide alternate drop down menu on tablets--*/	
+	#altMenu {
+		visibility: hidden;	
+	}
+	
+	#menuBox {
+		visibility: hidden;	
+	}
+	
+}
+
+/* ---------------------------------------------------------------------------Desktops----*/ 
+@media only screen and (min-width : 992px) {
+/*---------------------changes to wrapper or container styles--*/
+	#DSwrap {
+		width: 900px;
+		margin: 0 auto;
+	}
+	
+	header {
+		height: 159px;
+		background-size: 80% no-repeat;	
+	}
+	
+	h1 {
+		font-size: 2em;
+		margin: 5px 15% 5px 5%;
+		padding: 5px 15% 5px 5%;	
+	}
+/*---------------------show default menu on desktops----*/		
+	#menu {
+		visibility: visible;	
+		clear: both;
+		color: #633;
+		background-color: #a3ffff;
+		width: 900px;
+		height: 40px;	
+	}
+	
+	#menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #a3ffff;
+		visibility: visible;
+	}
+	
+	#menu li {
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: .85em;
+		font-weight: bold;
+		text-decoration: none;
+		float: left;	
+		margin-right: 20px;	
+		visibility: visible;
+	}
+	
+	#menu li a {
+		display: block;
+		padding: 5px;
+		visibility: visible;
+	}
+	
+	#menu li a:link {
+		color: #522900;
+		text-decoration: none;
+		visibility: visible;
+	}
+	
+	#menu li a:visited {
+		color: #5a504b;
+		text-decoration: none;	
+		visibility: visible;
+	}
+	
+	#menu li a:hover {
+		color: #003366;
+		text-decoration: none;
+		visibility: visible;	
+	}
+	
+	#menu li a:active {
+		color: #332d29;
+		text-decoration: none;
+		visibility: visible;	
+	}
+/*---------------------hide alternate drop down menu on desktops--*/	
+	#altMenu {
+		visibility: hidden;	
+	}
+	
+	#menuBox {
+		visibility: hidden;	
+	}
+}
