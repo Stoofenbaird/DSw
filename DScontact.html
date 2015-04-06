@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--release date: April 6, 2015-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>David Stratton: Exhibition Mailing List sign-up</title>
+<link rel="stylesheet" href="css/DSsec3.css" >
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<div id="DSwrap">
+		<header>
+  			<h1>David Stratton: Landscapes</h1> 
+  			<h1>Exhibition Mailing List</h1> 
+		</header>  
+     <div id="menu"> <!--primary navigation menu, disabled for small screens -->  
+          <ul>
+              <li><a href="DSabout.html">About</a></li>
+              <li><a href="DSartist.html">Artist's Statement</a></li>
+              <li><a href="DScollections.html">Collections</a></li>
+              <li><a href="DSgallery.html">Non-Flash Gallery</a></li> <!--javascript gallery for devices that do not support Flash -->
+              <li><a href="Portfolio/mediaGallery.html">Image Gallery</a></li>  <!--link to master Stoofenbaird gallery/DS portfolio folder -->                 
+              <li><a href="index.html">Stoofenbaird</a></li><!--Link to Stoofenbaird home page  -->
+        </ul>
+    </div> <!--menu div end-->        
+    <div id="altMenu">  <!-- Drop down menu for small screens; hidden on medium and large screens -->
+        <input type="image" src="DSelm/MenuBox.svg" id="altMenu" onclick="menuBox()"/>
+    </div> <!--end altMenu div-->
+    <div id="DScnt"> <!-- Main content division--On this page it holds a form for adding user name to post card mailing list.  Stock PHP-->
+    <article>
+        <p>If you would like to receive exhibition post cards for future shows, please fill in the form below:</p>
+        <form action="/webmailerform.php" method="post" enctype="multipart/form-data" name="card" id="card">
+            <ul>
+               <li><label>
+                    <input name="name" type="text" id="name" value="Name" />
+                    </label></li>
+                <li><label>
+                    <input name="address" type="text" id="address" value="Street Address" size="50" maxlength="80" />
+                    <br />
+                </label></li>
+                <li>
+                    <label>
+                        <input name="city" type="text" id="city" value="City" />
+                        <br />
+                        <input name="state" type="text" id="state" value="State" size="6" maxlength="6" />
+                    </label></li>
+                <li><label>
+                        <input name="zip" type="text" id="zip" value="Zip code" size="13" maxlength="10" />
+                    </label>
+                </li>
+                <li>
+                    <textarea name="comments" id="comments" cols="45" rows="5">Enter your comments or questions here (optional)</textarea>
+                </li>
+                <p class="review">Please review your information for accuracy before pressing the Submit button.</p>
+                <li></li>
+                <li>
+                    <input type="submit" name="submit" id="submit" value="Submit" />
+                </li>
+            </ul>
+        </form>
+        </article>
+    </div> <!--DScnt div end-->     
+    <div class="push"></div> <!-- class push footer at bottom of page-->
+    </div> <!--DSwrap div end-->   
+   	<div class="footer">
+		<p><span> &copy </span> 2015 David Stratton. Site managed by Stoofenbaird.</p>
+   	</div> <!--end footer div-->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/cardlist.js"></script> <!--functions for form -->
+	<script src="js/exhibit.js"></script>  <!--functionf for altMenu drop down menu for small screens -->
+</body>
+</html>
