@@ -6,5 +6,5 @@ following this link: www.Stoofenbaird.com/DSabout.html.  David Stratton images
 will be viewable through two separate galleries.  One is a non-Flash gallery
 containing only DS images.  The other gallery is the primary Stoofenbaird 
 gallery and contains a folder for the DS portfolio.  Links to both galleries
-are on each DS page and visible on tablet and desktop browsers.  Only the non-
-Flash gallery link is visible on small/phone browsers.
+are on each DS page and visible on tablet and desktop browsers. The full
+Stoofenbaird gallery is viewable on Flash-enabled devices.
