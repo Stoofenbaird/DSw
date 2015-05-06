@@ -1,5 +1,5 @@
 April 6, 2015
-This is the collection of files for the David Stratton artist web site pages,
+These are preliminary files for the David Stratton artist web site pages,
 which will be hosted on the Stoofenbaird.com website.  Image files will not be
 uploaded with this github directory.  The full, live pages may be viewed by
 following this link: www.Stoofenbaird.com/DSabout.html.  David Stratton images
